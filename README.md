@@ -103,3 +103,8 @@ Step 5: Check if Pod ruined successfully
 kubectl logs <POD NAME>
 ```
 
+Successful example
+
+![kubernetes](https://github.com/mathewsrc/python-cli-tool-with-docker-and-kubernetes/assets/94936606/5a04a67f-8f85-432a-b0ed-9a7352af7ae7)
+
+

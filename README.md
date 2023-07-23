@@ -10,7 +10,7 @@ Docker Desktop comes with a Graphical User Interface that lets us easily manage 
 
 [Docker Desktop](https://www.docker.com/products/docker-desktop/) <br/>
 
-**Minikube** and **Kind** are both tools that enable us to create a local cluster to run Kubernetes on our local computer. Kind and Minikube require that you have either Docker installed. If you already have installed the Docker Desktop you do not have to worry about this requirement and can proceed with installation of Minikube or/and Kind.
+**Minikube** and **Kind** are both tools that enable us to create a local cluster to run Kubernetes on our local computer. Kind and Minikube require that you have  Docker installed. If you already have installed the Docker Desktop you do not have to worry about this requirement and can proceed with installation of Minikube or/and Kind.
 
 [Minikube](https://minikube.sigs.k8s.io/docs/start/) or [Kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installing-from-release-binaries)<br/>
 

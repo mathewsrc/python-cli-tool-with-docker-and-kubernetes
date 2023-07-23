@@ -8,7 +8,7 @@ spec:
   containers:
   - name: myapp
     image: myapp
-    imagePullPolicy: Never
+    imagePullPolicy: IfNotPresent
     resources:
       requests:
         memory: "64Mi"

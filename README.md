@@ -20,7 +20,8 @@ Docker Desktop comes with a Graphical User Interface that lets us easily manage 
 3. Create a cluster using ```kind.exe (or kind) create cluster```
 
 (Optional) If you have Docker Desktop you can skip this one 
-[Kubeclt](https://kubernetes.io/docs/tasks/tools/)*
+
+[Kubeclt](https://kubernetes.io/docs/tasks/tools/)
    
 ### Some useful commands from Kubeclt
 

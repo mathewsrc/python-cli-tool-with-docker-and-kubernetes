@@ -76,3 +76,4 @@ Step 5: Check if Pod ruined successfully
 ```bash
 kubectl logs <POD NAME>
 ```
+

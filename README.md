@@ -57,7 +57,7 @@ minikube start
 Step 2: Create a Docker image
 
 ```bash
-Docker build -t <NAME>:<VERSION> -f Dockerfile
+docker build -t <NAME>:<VERSION> -f Dockerfile
 ```
 
 Step 3: Execute this command to use Kubernetes with local Docker images

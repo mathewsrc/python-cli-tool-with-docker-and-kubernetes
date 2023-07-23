@@ -105,6 +105,8 @@ kubectl logs <POD NAME>
 
 Successful example
 
+The following photo shows a successful Pod logs
+
 ![kubernetes](https://github.com/mathewsrc/python-cli-tool-with-docker-and-kubernetes/assets/94936606/5a04a67f-8f85-432a-b0ed-9a7352af7ae7)
 
 

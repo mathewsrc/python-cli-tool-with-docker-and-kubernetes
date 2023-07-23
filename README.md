@@ -44,7 +44,8 @@ kind create cluster - Create a new local cluster
 
 ### Creating a Pod
 
-> :note: Make sure that you have Docker Desktop opened
+> **note**
+>  Make sure that you have Docker Desktop opened
 > **Note** Make sure to replace all <NAME> placeholders with any name you want
 
 Step 1: Start minikube

@@ -6,11 +6,11 @@ Before starting to use Kubernetes we need to install Docker Desktop, Minikube or
 
 
 Docker Desktop is an application for macOS, Linux, and Windows machines that enables us to build and share containerized applications and microservices.
-Docker Desktop comes with a Graphical User Interface that lets us easily manage our containers, applications, and images directly from our machine. One advantage of Docker Desktop is that it comes with Kubernetes support, so we do not need to install Kubectl by ourselves. Another advantage of this tool is that it enables us to use local **Docker images** with **Kubernetes** without having to push it to a registry first that means that **Kubernetes** can create containers from images stored in the **Docker Engine image cache**. The thing we must do to is set `imagePullPolicy: IfNotPresent` in our Kubernetes yaml file. This ensures that the image from the local cache is going to be used.
+Docker Desktop comes with a Graphical User Interface that lets us easily manage our containers, applications, and images directly from our machine. One advantage of Docker Desktop is that it comes with Kubernetes support, so we do not need to install Kubectl by ourselves. Another advantage of this tool is that it enables us to use local **Docker images** with **Kubernetes** without having to push it to a registry first that means that **Kubernetes** can create containers from images stored in the **Docker Engine image cache**. The only thing we need to do is to set `imagePullPolicy: IfNotPresent` in our Kubernetes yaml file. This ensures that the image from the local cache is going to be used.
 
 [Docker Desktop](https://www.docker.com/products/docker-desktop/) <br/>
 
-**Minikube** and **Kind** are both tools that enable us to create a local cluster to run Kubernetes on our local computer. Kind and Minikube require that you have  Docker installed. If you already have installed the Docker Desktop you do not have to worry about this requirement and can proceed with installation of Minikube or/and Kind.
+**Minikube** and **Kind** are both tools that enable us to create a local cluster to run Kubernetes on our local computer. Kind and Minikube require that you have  Docker installed. If you already have installed the Docker Desktop you do not have to worry about this requirement and you can proceed with Minikube or/and Kind installation.
 
 [Minikube](https://minikube.sigs.k8s.io/docs/start/) or [Kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installing-from-release-binaries)<br/>
 

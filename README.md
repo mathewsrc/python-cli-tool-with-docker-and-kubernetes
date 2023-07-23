@@ -36,6 +36,18 @@ For this project, I am using the following extensions:
 * Makefile
 * Python
 * YAML
+
+## Project tree structure 
+
+```
+- kubernetes
+    |-- app.py # This is the Python application code.
+    |-- Dockerfile # This is the Dockerfile used to build a Docker container for the application.
+    |-- k8s.yml #  This is the Kubernetes configuration file for creating the application.
+    |-- Makefile # This file contains build and deployment automation commands.
+    |-- requirements.txt # This file lists the Python dependencies required for the application.
+    |-- run_kubernetes.sh # This shell script is used to run the Kubernetes application.
+```
   
 ### Some useful commands from Kubeclt
 

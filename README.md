@@ -46,7 +46,7 @@ kind create cluster - Create a new local cluster
 
 **Note:**
 > Make sure to replace all <NAME> placeholders with any name you want
-{: .note}
+
 
 Step 1: Start minikube
 

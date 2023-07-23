@@ -39,21 +39,22 @@ For this project, I am using the following extensions:
 
 ```bash
 kubectl cluster-info - Verify kubectl configuration
-kubectl version - Print version
+kubectl version - Print the version of kubectl
 kubectl get services - Verify services running
 kubectl get pods - Verify all pods running
-kubectl get pods -o wide - Verify more details of all pods running
-kubectl apply -f <NAME>.yaml --namespace=<NAME> - Create the Pod
+kubectl get pods -o wide - Verify more details about all pods running
+kubectl apply -f <NAME>.yaml --namespace=<NAME> - Create a Pod
 kubectl get pod <NAME> --namespace=<NAME> - Verify that the Pod is running
 kubectl top pod <NAME> --namespace=<NAME> - Fetch the metrics for the Pod
-kubectl delete pod <NAME> --namespace=<NAME> - Delete Pod
+kubectl delete pod <NAME> --namespace=<NAME> - Delete a Pod
 kubectl describe pod <NAME> --namespace=<NAME> - View detailed information about the Pod
-kubectl delete namespace <NAME> - Delete namespace
+kubectl delete namespace <NAME> - Delete a namespace
 ```
 
 ### Some useful commands from Minikube
 
 ```bash
+minikube version - Print the version of minikube
 minikube start - Start minikube
 minikube status - Check minikube status
 ```
@@ -61,6 +62,7 @@ minikube status - Check minikube status
 ### Some useful commands from Kind
 
 ```bash
+kind --version - Print the version of kind
 kind create cluster - Create a new local cluster
 ```
 

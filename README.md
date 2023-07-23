@@ -50,6 +50,9 @@ kind create cluster - Create a new local cluster
 > **Warning**
 > Make sure to replace all <NAME> placeholders with any name you want
 
+> **Check**
+> This is OK
+
 Step 1: Start minikube
 
 ```bash

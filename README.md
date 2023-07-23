@@ -45,7 +45,7 @@ kind create cluster - Create a new local cluster
 ### Creating a Pod
 
 **Note:**
-> Make sure to replace all <NAME> placeholders with any name you want
+> Make sure to replace all `<NAME>` placeholders with any name you want
 
 
 Step 1: Start minikube

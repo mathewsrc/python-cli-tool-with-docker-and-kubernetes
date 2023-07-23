@@ -19,7 +19,7 @@ Docker Desktop comes with a Graphical User Interface that lets us easily manage 
 2. Move to some dir: ```.\kind-windows-amd64.exe c:\some-dir-in-your-PATH\kind.exe```
 3. Create a cluster using ```kind.exe (or kind) create cluster```
 
-(Optional) If you have Docker Desktop you can skip this one 
+(Optional) If you have installed Docker Desktop you can skip this step
 
 [Kubeclt](https://kubernetes.io/docs/tasks/tools/)
    

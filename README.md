@@ -1,6 +1,6 @@
 ## Python CLI tool with Docker and Kubernetes
 
-Project: simple CLI app and deploy it with Kubernetes
+Project: Create a simple Python CLI app and deploy it with Kubernetes
 
 Before starting to use Kubernetes we need to install Docker Desktop, Minikube or Kind, and Kubectl. I linked the official websites for you bellow:
 

@@ -45,6 +45,13 @@ kind create cluster - Create a new local cluster
 ### Creating a Pod
 
 > **Note**
+> This is a note
+
+> **Warning**
+> This is a warning
+
+
+> **Note**
 > Make sure that you have Docker Desktop opened
 > Make sure to replace all <NAME> placeholders with any name you want
 

@@ -4,14 +4,23 @@ Project: Create a simple Python CLI app and deploy it with Kubernetes
 
 Before starting to use Kubernetes we need to install Docker Desktop, Minikube or Kind, and Kubectl. I linked the official websites for you bellow:
 
+
+Docker Desktop is an application for macOS, Linux, and Windows machines that enables us to build and share containerized applications and microservices.
+Docker Desktop comes with a Graphical User Interface that lets us easily manage our containers, applications, and images directly from our machine. One advantage of Docker Desktop is that it comes with Kubernetes support, so we do not need to install `kubectl` by ourselves. Another advantage of this tool is that it enables us to use local **Docker images** with **Kubernetes** without having to push it to a registry first that means that **Kubernetes** can create containers from images stored in the **Docker Engine image cache**. The thing we must do to is set `imagePullPolicy: IfNotPresent` in our Kubernetes yaml file. This ensures that the image from the local cache is going to be used.
+
 [Docker Desktop](https://www.docker.com/products/docker-desktop/) <br/>
+
+**Minikube** and **Kind** are both tools that enable us to create a local cluster to run Kubernetes on our local computer. Kind and Minikube require that you have either Docker installed. If you already have installed the Docker Desktop you do not have to worry about this requirement and can proceed with installation of Minikube or/and Kind.
+
 [Minikube](https://minikube.sigs.k8s.io/docs/start/) or [Kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installing-from-release-binaries)<br/>
-[Kubeclt](https://kubernetes.io/docs/tasks/tools/)
 
 ### Installing Kind (PowerShell or Git Bash)
 1. Download Kind: ```curl.exe -Lo kind-windows-amd64.exe https://kind.sigs.k8s.io/dl/v0.20.0/kind-windows-amd64```
 2. Move to some dir: ```.\kind-windows-amd64.exe c:\some-dir-in-your-PATH\kind.exe```
 3. Create a cluster using ```kind.exe (or kind) create cluster```
+
+(Optional) If you have Docker Desktop you can skip this one 
+[Kubeclt](https://kubernetes.io/docs/tasks/tools/)*
    
 ### Some useful commands from Kubeclt
 

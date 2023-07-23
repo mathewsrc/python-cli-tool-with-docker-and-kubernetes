@@ -16,13 +16,25 @@ Docker Desktop comes with a Graphical User Interface that lets us easily manage 
 
 ### Installing Kind (PowerShell or Git Bash)
 1. Download Kind: ```curl.exe -Lo kind-windows-amd64.exe https://kind.sigs.k8s.io/dl/v0.20.0/kind-windows-amd64```
-2. Move to some dir: ```.\kind-windows-amd64.exe c:\some-dir-in-your-PATH\kind.exe```
+2. Move it to some dir: ```.\kind-windows-amd64.exe c:\some-dir-in-your-PATH\kind.exe```
 3. Create a cluster using ```kind.exe (or kind) create cluster```
 
 (Optional) If you have installed Docker Desktop you can skip this step
 
 [Kubeclt](https://kubernetes.io/docs/tasks/tools/)
-   
+
+
+## VSCODE extensions
+
+For this project, I am using the following extensions:
+
+* Docker
+* Kubernetes
+* Kubernetes Kind
+* Makefile
+* Python
+* YAML
+  
 ### Some useful commands from Kubeclt
 
 ```bash

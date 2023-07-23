@@ -2,6 +2,8 @@
 
 Project: Create a simple Python CLI app and deploy it with Kubernetes
 
+## Instaling tools 
+
 Before starting to use Kubernetes we need to install Docker Desktop, Minikube or Kind, and Kubectl. I linked the official websites for you below:
 
 
@@ -66,7 +68,7 @@ kind --version - Print the version of kind
 kind create cluster - Create a new local cluster
 ```
 
-### Creating a Pod
+## Creating a Pod
 
 **Note:**
 > Make sure to replace all `<NAME>` placeholders with any name you want

@@ -6,6 +6,10 @@ What is Kubernetes
 
 The official [documentation](https://kubernetes.io/docs/concepts/overview/) defines Kubernetes as a portable, extensible, open-source platform for managing containerized workloads and services. Kubernetes extends all benefits of container deployment such as continuous development (CD), integration (CI), deployment, observability, consistency, isolation, and security. Kubernetes can automatically handle scaling and failover for your application by adding more units of work, replacing or restarting failure containers, and using load balance to distribute network traffic keeping our services stable.
 
+What is Docker
+
+The official [documentation](https://www.docker.com/resources/what-container/) of Docker defines a container as a standard unit of software that packages up code and all its dependencies. We can create containers by using Docker images which contain all information needed to create and run a container: code, runtime, system tools, system libraries, and settings. Containers add an extra layer of security as it isolates the application from its host environment and ensure that it works at any environment (Windows, Linux, MacOS, etc).
+
 ## Instaling tools 
 
 Before starting to use Kubernetes we need to install Docker Desktop, Minikube or Kind, and Kubectl. I linked the official websites for you below:

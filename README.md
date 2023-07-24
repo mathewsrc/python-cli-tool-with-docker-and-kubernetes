@@ -2,6 +2,10 @@
 
 Project: Create a simple Python CLI app and deploy it with Kubernetes
 
+What is Kubernetes
+
+The official [documentation](https://kubernetes.io/docs/concepts/overview/) defines Kubernetes as a portable, extensible, open-source platform for managing containerized workloads and services. Kubernetes extends all benefits of container deployment such as continuous development (CD), integration (CI), deployment, observability, consistency, isolation, and security. Kubernetes can automatically handle scaling and failover for your application by adding more units of work, replacing or restarting failure containers, and using load balance to distribute network traffic keeping our services stable.
+
 ## Instaling tools 
 
 Before starting to use Kubernetes we need to install Docker Desktop, Minikube or Kind, and Kubectl. I linked the official websites for you below:

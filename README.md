@@ -82,6 +82,27 @@ kind create cluster - Create a new local cluster
 
 ## Creating a Pod
 
+### What is a Pod
+
+The official documentation of Kubernetes defines a Pod as units of computing that you can create and manage in Kubernetes. Each pod contains one or more application containers, with shared storage and network. We can define a Pod using a yaml file with some information about the Pod and the application container as the example below:
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+spec:
+  containers:
+  - name: myapp
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
+```
+
+### Lifecycle of a Pod
+
+Whenever a new Pod is created, it is automatically scheduled to run on a specific Node within your cluster. Throughout its execution, the Pod remains on that particular Node. Once the Pod completes its task, the Pod object is deleted and is evicted from its Node for lack of resources, or the node fails.
+
 **Note:**
 > Make sure to replace all `<NAME>` placeholders with any name you want
 

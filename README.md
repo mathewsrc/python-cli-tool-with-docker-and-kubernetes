@@ -219,11 +219,17 @@ Step 4: Create a Pod from a Docker image
 ```bash
 kubectl apply -f k8s_deploy.yaml --namespace=<NAME>
 ```
+
+![k8s_deployment](https://github.com/mathewsrc/python-cli-tool-with-docker-and-kubernetes/assets/94936606/a2bf1c3f-2bae-48b9-b6e6-e9933cff0ebc)
+
 Step 5: Check if Pod ruined successfully
 
 ```bash
 kubectl get deployment 
 ```
+
+![k8s_deploy_status](https://github.com/mathewsrc/python-cli-tool-with-docker-and-kubernetes/assets/94936606/2d8608be-b9f4-4b7f-b2a8-900083958af4)
+
 
 ```bash
 kubectl describe deployment myapp-deployment
@@ -235,11 +241,15 @@ Manually Horizontal Scaling/Decrease the deployment
 kubectl scale deployment myapp-deployment --replicas=<NumberOfReplicas>
 ```
 
+![manuallyscalingdeploy](https://github.com/mathewsrc/python-cli-tool-with-docker-and-kubernetes/assets/94936606/e72bf6c8-c3a1-4376-a618-9ffc1a61a822)
+
 ### Exposing the deployment
 
 ```bash
 kubectl expose deployment myapp-deployment --type=LoadBalancer --name=myapp --port=80
 ```
+
+![exposingdeployment](https://github.com/mathewsrc/python-cli-tool-with-docker-and-kubernetes/assets/94936606/3c6ab962-0cb3-46ce-a695-e7d2f66c8455)
 
 As we are utilizing a local cluster with Minikube, we will need to manually obtain the URL provided by Minikube using the following commands:
 

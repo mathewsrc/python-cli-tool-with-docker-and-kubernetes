@@ -151,3 +151,104 @@ The following photo shows a successful Pod logs
 ![kubernetes](https://github.com/mathewsrc/python-cli-tool-with-docker-and-kubernetes/assets/94936606/5a04a67f-8f85-432a-b0ed-9a7352af7ae7)
 
 
+## Kubernetes yaml file for deployment
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: myapp
+        image: myapp
+        imagePullPolicy: Never
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+```
+
+Some differences from Pod yaml
+
+**apiVersion: apps/v1**
+
+This indicates the API version for the Kubernetes resource, which, in this case, is a Deployment.
+
+**kind: Deployment**
+
+Specifies the type of Kubernetes resource, which is a Deployment in this case
+
+**replicas: 3**
+
+This defines the desired number of replicas (pods) that should be maintained by the Deployment
+
+**selector**
+
+Specifies the labels that the Deployment uses to identify the pods it manages. 
+
+```bash
+minikube start
+```
+
+Step 2: Create a Docker image
+
+```bash
+docker build -t <NAME>:<VERSION> -f Dockerfile
+```
+
+Step 3: Execute this command to use Kubernetes with local Docker images
+
+```bash
+eval $(minikube -p minikube docker-env)
+```
+
+Step 4: Create a Pod from a Docker image
+
+```bash
+kubectl apply -f k8s_deploy.yaml --namespace=<NAME>
+```
+Step 5: Check if Pod ruined successfully
+
+```bash
+kubectl get deployment 
+```
+
+```bash
+kubectl describe deployment myapp-deployment
+```
+
+Manually Horizontal Scaling/Decrease the deployment
+
+```bash
+kubectl scale deployment myapp-deployment --replicas=<NumberOfReplicas>
+```
+
+### Exposing the deployment
+
+```bash
+kubectl expose deployment myapp-deployment --type=LoadBalancer --name=myapp --port=80
+```
+
+As we are utilizing a local cluster with Minikube, we will need to manually obtain the URL provided by Minikube using the following commands:
+
+```bash
+minikube service --url myapp
+```
+
+The last command will display the IP and PORT that we can access in our computer
+
+```
+Example: http://127.0.0.1:56820
+```
